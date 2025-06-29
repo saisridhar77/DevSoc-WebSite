@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #0d9488, #14b8a6);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #0f766e, #0d9488);
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-clip: content-box;
+  box-shadow: 0 0 10px rgba(13, 148, 136, 0.3);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(135deg, #134e4a, #0f766e);
+  border-radius: 10px;
+  border: 0px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #2dd4bf, #14b8a6);
+  box-shadow: 0 0 5px rgba(45, 212, 191, 0.2);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #14b8a6, #0d9488);
+  box-shadow: 0 0 15px rgba(45, 212, 191, 0.4);
+}
+
+.dark ::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(135deg, #0d9488, #0f766e);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #14b8a6 transparent;
+}
+
+.dark * {
+  scrollbar-color: #2dd4bf transparent;
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scroll indicator */
+.scroll-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #14b8a6, #2dd4bf, #5eead4);
+  transform-origin: left;
+  transform: scaleX(0);
+  z-index: 9999;
+  transition: transform 0.1s ease-out;
+}
+
+.dark .scroll-indicator {
+  background: linear-gradient(90deg, #2dd4bf, #14b8a6, #0d9488);
+}
+
+/* Additional utility animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(13, 148, 136, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(13, 148, 136, 0.6);
+  }
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Lottie container responsive styles - Full screen scaling */
+.lottie-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.lottie-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lottie-wrapper > div {
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.lottie-wrapper svg {
+  width: 100vw !important;
+  height: 100vh !important;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Ensure Lottie scales properly on all devices */
+@media (max-width: 768px) {
+  .lottie-wrapper {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .lottie-wrapper > div {
+    width: 100vw !important;
+    height: 100vh !important;
+  }
+  
+  .lottie-wrapper svg {
+    width: 100vw !important;
+    height: 100vh !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .lottie-wrapper {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .lottie-wrapper > div {
+    width: 100vw !important;
+    height: 100vh !important;
+  }
+  
+  .lottie-wrapper svg {
+    width: 100vw !important;
+    height: 100vh !important;
+  }
+}
