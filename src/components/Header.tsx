@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Code2 } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 import ThemeToggle from './ThemeToggle';
+import logo from "/src/assets/DevSocLogo.png"
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -68,7 +69,7 @@ const Header: React.FC = () => {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2 z-10">
-            <img src="/src/assets/DevSoc Graphic Logo.png" alt="DevSoc Logo" className="w-10 h-8" />
+            <img src={logo} alt="DevSoc Logo" className="w-10 h-8" />
             <span className="text-xl font-bold text-slate-900 dark:text-slate-100">
               DEVSOC
             </span>
