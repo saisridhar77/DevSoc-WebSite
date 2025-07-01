@@ -15,9 +15,9 @@ useEffect(() => {
     const createParticles = () => {
       if (!particlesRef.current) return;
       
-      for (let i = 0; i < 15; i++) {
+      for (let i = 0; i < 50; i++) {
         const particle = document.createElement('div');
-        particle.className = 'absolute w-1 h-1 bg-teal-400/30 rounded-full';
+        particle.className = 'absolute w-2 h-2 bg-teal-400/30 rounded-full';
         particle.style.left = Math.random() * 100 + '%';
         particle.style.top = Math.random() * 100 + '%';
         particlesRef.current.appendChild(particle);
