@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Users, Target, Lightbulb, Rocket } from 'lucide-react';
 
 const About= () => {
-  const sectionRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef(null);
 
   useEffect(() => {
     const section = sectionRef.current;

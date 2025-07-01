@@ -23,7 +23,7 @@ function App() {
       smooth: true,
     });
 
-    function raf(time: number) {
+    function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }

@@ -2,16 +2,16 @@ import React, { useEffect,useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import Lottie from 'lottie-react';
 import animationData from '../assets/Logo-6-[remix] copy.json';
+import logo from '../assets/DevSoc.png'
 
-const Hero: React.FC = () => {
-  const heroRef = useRef<HTMLDivElement>(null);
-  const logoRef = useRef<HTMLImageElement>(null);
+const Hero = () => {
+  const heroRef = useRef(null);
+  const logoRef = useRef(null);
   const [showLottie, setShowLottie] = useState(true);
   const [showContent, setShowContent] = useState(false);
-  const particlesRef = useRef<HTMLDivElement>(null);
+  const particlesRef = useRef(null);
 
 useEffect(() => {
-    // Create floating particles background
     const createParticles = () => {
       if (!particlesRef.current) return;
       
@@ -37,7 +37,6 @@ useEffect(() => {
 
     createParticles();
 
-    // Set initial states for all animated elements
     if (logoRef.current) {
       gsap.set(logoRef.current, { 
         opacity: 0, 
@@ -136,14 +135,14 @@ useEffect(() => {
       )}
       {/* Main Content */}
       {showContent && (
-        <div className="text-center max-w-4xl mx-auto relative z-10">
+        <div className="text-center max-w-6xl mx-auto relative z-10">
           {/* Logo - Centered */}
           <div className="fade-in logo mb-8 flex justify-center">
             <img 
               ref={logoRef}
-              src="/DevSoc Logo copy.png" 
+              src={logo} 
               alt="DEVSOC Logo" 
-              className="max-w-md w-full h-auto drop-shadow-2xl"
+              className="max-w-xl w-full h-auto drop-shadow-2xl"
             />
           </div>
           <div className="fade-in mb-12">

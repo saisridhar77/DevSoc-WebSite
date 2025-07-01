@@ -4,8 +4,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Verticals from '../components/Verticals';
 import Coordinators from '../components/Coordinators';
 
-const VerticalsTeamPage: React.FC = () => {
-  const sectionRef = useRef<HTMLDivElement>(null);
+const VerticalsTeamPage = () => {
+  const sectionRef = useRef(null);
 
   useEffect(() => {
     const section = sectionRef.current;

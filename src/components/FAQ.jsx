@@ -3,9 +3,9 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Plus, Minus } from 'lucide-react';
 
-const FAQ: React.FC = () => {
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const [openItems, setOpenItems] = useState<number[]>([]);
+const FAQ = () => {
+  const sectionRef = useRef(null);
+  const [openItems, setOpenItems] = useState([]);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -33,7 +33,7 @@ const FAQ: React.FC = () => {
     };
   }, []);
 
-  const toggleItem = (index: number) => {
+  const toggleItem = (index) => {
     setOpenItems(prev => 
       prev.includes(index) 
         ? prev.filter(item => item !== index)

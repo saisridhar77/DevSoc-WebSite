@@ -5,8 +5,8 @@ import { ExternalLink, Github, Calendar } from 'lucide-react';
 import devfest4 from '../assets/devfest4.0.png';
 import spree25 from '../assets/spree25.png';
 
-const ProjectsPage: React.FC = () => {
-  const sectionRef = useRef<HTMLDivElement>(null);
+const ProjectsPage = () => {
+  const sectionRef = useRef(null);
 
   useEffect(() => {
     const section = sectionRef.current;

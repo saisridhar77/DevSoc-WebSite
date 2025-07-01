@@ -2,8 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-const ScrollIndicator: React.FC = () => {
-  const indicatorRef = useRef<HTMLDivElement>(null);
+const ScrollIndicator = () => {
+  const indicatorRef = useRef(null);
 
   useEffect(() => {
     const indicator = indicatorRef.current;

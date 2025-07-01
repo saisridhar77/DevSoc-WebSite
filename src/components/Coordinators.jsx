@@ -12,7 +12,7 @@ import shaunak from '../assets/shaunak.jpg';
 
 
 const Coordinators=() => {
-  const sectionRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef(null);
 
   useEffect(() => {
     const section = sectionRef.current;

@@ -1,43 +1,65 @@
-import React from 'react';
-import { 
-  Code2, 
-  Github, 
-  Linkedin, 
+import React from "react";
+import devtestwhite from "../assets/DevTextWhite.png";
+import logo from "../assets/DevSocLogo.png";
+
+import {
+  Github,
+  Linkedin,
   Instagram,
   Mail,
   MapPin,
-  Youtube
-} from 'lucide-react';
+  Youtube,
+} from "lucide-react";
 
-const Footer: React.FC = () => {
+const Footer = () => {
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/Devsoc-BPGC', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://in.linkedin.com/company/devsoc-bpgc', label: 'LinkedIn' },
-    { icon: Instagram, href: 'https://www.instagram.com/devsocbitsgoa/?hl=en', label: 'Instagram' },
-    { icon: Youtube, href: 'https://www.youtube.com/channel/UCOYKNjQaifpxy5qG3as82ZA', label: 'YouTube' },
+    { icon: Github, href: "https://github.com/Devsoc-BPGC", label: "GitHub" },
+    {
+      icon: Linkedin,
+      href: "https://in.linkedin.com/company/devsoc-bpgc",
+      label: "LinkedIn",
+    },
+    {
+      icon: Instagram,
+      href: "https://www.instagram.com/devsocbitsgoa/?hl=en",
+      label: "Instagram",
+    },
+    {
+      icon: Youtube,
+      href: "https://www.youtube.com/channel/UCOYKNjQaifpxy5qG3as82ZA",
+      label: "YouTube",
+    },
   ];
 
   const quickLinks = [
-    { name: 'About Us', href: '#about' },
-    { name: 'Verticals', href: '#verticals' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Team', href: '#coordinators' },
-    { name: 'FAQ', href: '#faq' },
-    { name: 'Contact', href: '#contact' },
+    { name: "About Us", href: "#about" },
+    { name: "Verticals", href: "#verticals" },
+    { name: "Projects", href: "#projects" },
+    { name: "Team", href: "#coordinators" },
+    { name: "FAQ", href: "#faq" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
-    <footer id="contact" className="bg-gray-900 dark:bg-black text-white py-16 px-6">
+    <footer
+      id="contact"
+      className="bg-[#15292d] dark:bg-black text-white py-16 px-6"
+    >
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <Code2 className="w-8 h-8 text-teal-600" />
-              <span className="text-2xl font-bold">DEVSOC</span>
+              <img src={logo} alt="DevSoc Logo" className="w-10 h-8" />
+
+              <img
+                src={devtestwhite}
+                alt="DevSoc Logo Light"
+                className="w-15 h-8"
+              />
             </div>
             <p className="text-gray-400 text-lg leading-relaxed mb-6 max-w-md">
-              Empowering the next generation of developers through innovation, 
+              Empowering the next generation of developers through innovation,
               collaboration, and cutting-edge technology solutions.
             </p>
             <div className="flex space-x-4">
