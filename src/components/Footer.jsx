@@ -32,12 +32,11 @@ const Footer = () => {
   ];
 
   const quickLinks = [
-    { name: "About Us", href: "#about" },
-    { name: "Verticals", href: "#verticals" },
-    { name: "Projects", href: "#projects" },
-    { name: "Team", href: "#coordinators" },
-    { name: "FAQ", href: "#faq" },
-    { name: "Contact", href: "#contact" },
+    { name: "About Us", href: "/#about" },
+    { name: "Verticals", href: "/team" },
+    { name: "Projects", href: "/projects" },
+    { name: "Team", href: "/team" },
+    { name: "FAQ", href: "/#faq" },
   ];
 
   return (
