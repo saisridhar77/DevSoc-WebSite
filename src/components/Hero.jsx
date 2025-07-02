@@ -135,9 +135,9 @@ useEffect(() => {
       )}
       {/* Main Content */}
       {showContent && (
-        <div className="text-center max-w-6xl mx-auto relative z-10">
+        <div className="text-center max-w-6xl mx-auto pt-24 relative z-10">
           {/* Logo - Centered */}
-          <div className="fade-in logo mb-8 flex justify-center">
+          <div className="fade-in logo flex justify-center">
             <img 
               ref={logoRef}
               src={logo} 

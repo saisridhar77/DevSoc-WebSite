@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import Vid from '../components/vid';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ExternalLink, Github, Calendar } from 'lucide-react';
@@ -48,13 +49,13 @@ const ProjectsPage = () => {
     features: ['Dynamic schedule', 'Speaker profiles', 'Responsive UI', 'Hackathon info']
   },
   {
-    title: 'Spree245 Website',
-    description: 'Event portal “Spree24” with registration flow and details for DevSoc’s annual technical spree.',
+    title: 'Spree25 Website',
+    description: 'Event portal “Spree25” with registration flow and details for DevSoc’s annual technical spree.',
     tech: ['JavaScript', 'HTML', 'CSS'],
     category: 'Web Development',
     date: '2025',
     status: 'Live',
-    github: 'https://github.com/Devsoc-BPGC/spree24',
+    github: 'https://bits-spree.org/',
     demo: '#',
     image: spree25,
     features: ['Event info pages', 'Registration forms', 'Responsive design']
@@ -137,7 +138,8 @@ const ProjectsPage = () => {
 
   return (
     <div className="pt-20">
-      <section ref={sectionRef} className="py-10 px-6">
+      <Vid />
+      <section ref={sectionRef} className=" px-6">
         <div className="container mx-auto max-w-7xl">
           {/* Header */}
           <div className="text-center mb-16">
