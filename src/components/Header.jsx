@@ -30,11 +30,8 @@ const Header = () => {
 
   const navItems = [
     { name: "Home", href: "/" },
-    { name: "About", href: "/#about" },
     { name: "Projects", href: "/projects" },
     { name: "Team & Verticals", href: "/team" },
-    { name: "FAQ", href: "/#faq" },
-    { name: "Contact", href: "/#contact" },
   ];
 
   const handleNavClick = (href) => {

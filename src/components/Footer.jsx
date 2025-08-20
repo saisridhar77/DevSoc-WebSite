@@ -31,18 +31,12 @@ const Footer = () => {
     },
   ];
 
-  const quickLinks = [
-    { name: "About Us", href: "/#about" },
-    { name: "Verticals", href: "/team" },
-    { name: "Projects", href: "/projects" },
-    { name: "Team", href: "/team" },
-    { name: "FAQ", href: "/#faq" },
-  ];
+
 
   return (
     <footer
       id="contact"
-      className="bg-[#15292d] dark:bg-black text-white py-16 px-6"
+      className="bg-[#15292d] dark:bg-black text-white py-8 px-6"
     >
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -75,26 +69,14 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
+          
           <div>
-            <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
-            <ul className="space-y-3">
-              {quickLinks.map((link, index) => (
-                <li key={index}>
-                  <a
-                    href={link.href}
-                    className="text-gray-400 hover:text-teal-600 transition-colors duration-200"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Contact</h3>
+            <h3 className="text-lg font-semibold">Contact</h3>
             <div className="space-y-4">
               <div className="flex items-center space-x-3 text-gray-400">
                 <Mail className="w-5 h-5 text-teal-600" />
@@ -107,7 +89,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-12 pt-8 border-t border-gray-800 dark:border-gray-900 text-center">
+        <div className="  border-t border-gray-800 dark:border-gray-900 text-center">
           <p className="text-gray-400">
             Made with <span className="text-red-500">♥</span> by DevSoc
           </p>
