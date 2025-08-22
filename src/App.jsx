@@ -6,7 +6,7 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import ProjectsPage from "./pages/ProjectsPage";
 import VerticalsTeamPage from "./pages/VerticalsTeamPage";
-import GalleryPage from "./pages/gallery";
+import GalleryPage from "./pages/Gallery";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import { LenisProvider } from "./contexts/LenContext";
