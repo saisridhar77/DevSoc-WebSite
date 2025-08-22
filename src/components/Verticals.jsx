@@ -44,7 +44,7 @@ const Verticals = () => {
       icon: Code,
       title: 'Web Development',
       description: 'Full-stack web applications using modern frameworks and technologies.',
-      tech: ['React', 'Node.js', 'TypeScript'],
+      tech: ['React', 'Node.js', 'Next.js','three.js'],
     },
     {
       icon: Smartphone,
@@ -73,8 +73,8 @@ const Verticals = () => {
     {
       icon: HardDrive,
       title: 'Project SysCall',
-      description: 'A comprehensive project management system for efficient workflow.',
-      tech: ['Django', 'PostgreSQL', 'Docker'],
+      description: 'Low level Development and bare-metal related development',
+      tech: ['Assembly ', 'C++', 'bare-metal'],
     },
   ];
 

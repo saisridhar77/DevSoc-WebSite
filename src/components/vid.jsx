@@ -53,6 +53,7 @@ const Vid = () => {
               ref={videoRef} 
               src={vid} 
               muted
+              preload="auto"
               className="w-full"
             ></video>
           </div>

@@ -32,6 +32,8 @@ const Header = () => {
     { name: "Home", href: "/" },
     { name: "Projects", href: "/projects" },
     { name: "Team & Verticals", href: "/team" },
+    { name: "Gallery", href: "/gallery" },
+
   ];
 
   const handleNavClick = (href) => {
